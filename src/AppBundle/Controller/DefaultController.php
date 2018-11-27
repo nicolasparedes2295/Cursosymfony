@@ -17,11 +17,11 @@ class DefaultController extends Controller
         return $this->render('contenedor/index.html.twig');
     }
     /**
-     * @Route("/nosotros", name="nosotros")
+     * @Route("/nosotros/{sitio}", name="nosotros")
      */
-    public function nosotrosAction(Request $request)
+    public function nosotrosAction(Request $request,$sitio='todos')
     {
         // replace this example code with whatever you need
-        return $this->render('contenedor/index.html.twig');
+        return $this->render('contenedor/nosotros.html.twig',array('sitio'=>$sitio));
     }
 }

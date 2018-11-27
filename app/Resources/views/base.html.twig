@@ -21,9 +21,6 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{{ path('nosotros')}}">Nosotros</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="services.html">Caracteristicas</a>
               </li>
               <li class="nav-item">
@@ -31,10 +28,11 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Guia..
+                  Nosotros
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                  <a class="dropdown-item" href="portfolio-1-col.html">Como usar la aplicación</a>
+                <a class="dropdown-item" href="{{ path('nosotros',{'sitio':'sf'})}}">Desarrollo de Software</a>
+                  <a class="dropdown-item" href="{{ path('nosotros',{'sitio':'qa'})}}">Software Quality Assurance</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -44,9 +42,6 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                   <a class="dropdown-item" href="pricing.html">Cliente</a>
                   <a class="dropdown-item" href="full-width.html">Administrador</a>
-                  <a class="dropdown-item" href="sidebar.html">Sistema Gestión Comercial</a>
-                  <a class="dropdown-item" href="faq.html">EBP2</a>
-                  <a class="dropdown-item" href="404.html">Cerrar</a>
                 </div>
               </li>
             </ul>
